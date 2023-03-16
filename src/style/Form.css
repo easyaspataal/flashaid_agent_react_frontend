@@ -27,6 +27,9 @@
 .moretextfield{
   width: 25vw;
 }
+.moretextfieldage{
+  width: 25vw;
+}
 .paymentButton{
    
         background-color: orange;
@@ -38,11 +41,9 @@
         border: 0;
         font-weight: 600; 
         font-size: 1vw; 
-    
         display: flex;
-    justify-content: center;
-    align-items: center;
-   
+        justify-content: center;
+        align-items: center;
 }
 .paymentButton:hover {
   background-color:green
@@ -120,3 +121,106 @@ width: 10vw;
   justify-content: space-between;
   width: 30%;
 }
+
+  /* Media query for mobile view */
+  @media (max-width: 767px) {
+
+    .textContainer{
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+      justify-content: space-around;
+      height:40vw;
+    }
+    .textContainerMore{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+      height: 50vw;
+      justify-content: space-around;
+
+    }
+    .textfield{
+      width: 90%;
+  }
+
+  .moretextfield{
+    width: 90%;
+  }
+  .addmore{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    
+  }
+  .addMoreButton{
+    padding: 4vw;
+    border-radius: 10px;
+    color: white;
+    background-color: #007bff;
+    border: #007bff;
+    font-size: 16px;
+    font-weight: 600;   
+    width: 50%;
+   
+    }
+    .appliedButton{
+      padding: 4vw;
+    border-radius: 10px;
+    color: white;
+    background-color: green;
+    border: green;
+    font-size: 16px;
+    font-weight: 600;   
+    width: 50%;
+    }
+    .amountRow{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+    }
+    .billConatainer{
+      width: 90%;
+    }
+
+.addmore{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.paymentButton{
+  background-color: orange;
+  padding: 20px 0;
+  border-radius: 3px;
+  color: white;
+  text-align: center;
+  width: 70%;
+  border: 0;
+  font-weight: 600; 
+  font-size: 5vw; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inactivePaymentButton{
+  background-color: #666666;
+  padding: 20px 0;
+  border-radius: 3px;
+  color: #cccccc;
+  text-align: center;
+  width: 70%;
+  border: 0;
+  font-weight: 600; 
+  font-size: 5vw; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+  }
