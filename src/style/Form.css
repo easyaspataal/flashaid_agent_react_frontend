@@ -1,0 +1,122 @@
+.textContainer {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+    padding: 10px;
+    /* background-color: #1bbc9d; */
+  }
+.textfield{
+    width: 40vw;
+}
+.other{
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: underline;
+}
+.otherDiscount{
+  font-size: 16px;
+  font-weight: 500;
+  display: inline-block;
+  color: #007bff;
+}
+.otherGst{
+  font-size: 16px;
+  font-weight: 600;
+  display: inline-block;
+}
+.moretextfield{
+  width: 25vw;
+}
+.paymentButton{
+   
+        background-color: orange;
+        padding: 20px 0;
+        border-radius: 3px;
+        color: white;
+        text-align: center;
+        width: 10vw;
+        border: 0;
+        font-weight: 600; 
+        font-size: 1vw; 
+    
+        display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.paymentButton:hover {
+  background-color:green
+}
+.inactivePaymentButton{
+  background-color: #666666;
+  padding: 20px 0;
+  border-radius: 3px;
+  color: #cccccc;
+  text-align: center;
+  width: 10vw;
+  border: 0;
+  font-weight: 600; 
+  font-size: 1vw; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.addMoreButton{
+padding: 1vw;
+border-radius: 10px;
+color: white;
+background-color: #007bff;
+border: #007bff;
+font-size: 16px;
+font-weight: 600;   
+width: 10vw;
+}
+.appliedButton{
+  padding: 1vw;
+border-radius: 10px;
+color: white;
+background-color: green;
+border: green;
+font-size: 16px;
+font-weight: 600;   
+width: 10vw;
+}
+
+.addMoreButton:hover{
+  border: #FC2361;
+  background-color: #FC2361;
+  letter-spacing: 0.1em;
+  transition: .3s!important;
+  /* text-transform: uppercase; */
+  }
+.addmore{
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 3vw;
+  padding-left:2vw;
+}
+.otherBilling{
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.addmoreDiscount{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-left: 3vw;
+  padding-left:2vw;
+}
+.billConatainer{
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 5vw;
+  align-items: center;
+}
+.amountRow{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 30%;
+}
