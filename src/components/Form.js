@@ -72,10 +72,7 @@ const Form = () => {
     }
   };
 
-  // const handleSubmit = (event) => {
-  //   event.preventDefault();
-  //   console.log("Mobile number:", mobileNumber);
-  // };
+
   const _memberData = [
     {
       name,
@@ -115,7 +112,6 @@ const Form = () => {
   const AgentLead = async (event) => {
     try {
       event.preventDefault();
-      console.log("inside agentLead",agent_id,address,email,mobileNumber,state)
       setOpen(true);
       const _data = {
         agent_id: agent_id,
@@ -175,7 +171,6 @@ const Form = () => {
     const options = {
       // key: "rzp_test_hVjBOn6X9uauSZ",
       key: "rzp_test_hVjBOn6X9uauSZ",
-
       currency: data.currency,
       amount: Number(data.amount) * 100,
       order_id: data.id,
@@ -317,8 +312,8 @@ const Form = () => {
           <p className="other">Add Other Members</p>
         </div>
 
-        <div>
-          <div className="textContainer">
+      
+          <div className="textContainerMore">
             <TextField
               className="moretextfield"
               required
@@ -344,12 +339,11 @@ const Form = () => {
               onChange={(e) => setMember1Rel(e.target.value)}
             />
           </div>
-        </div>
+        
         <br />
         {flag && (
           <div>
-            <div>
-              <div className="textContainer">
+              <div className="textContainerMore">
                 <TextField
                   className="moretextfield"
                   required
@@ -374,11 +368,9 @@ const Form = () => {
                   value={member2rel}
                   onChange={(e) => setMember2Rel(e.target.value)}
                 />
-              </div>
             </div>
             <br />
-            <div>
-              <div className="textContainer">
+              <div className="textContainerMore">
                 <TextField
                   className="moretextfield"
                   required
@@ -403,7 +395,6 @@ const Form = () => {
                   value={member3rel}
                   onChange={(e) => setMember3Rel(e.target.value)}
                 />
-              </div>
             </div>
           </div>
         )}
@@ -413,7 +404,7 @@ const Form = () => {
             className="textfield"
             required
             id="outlined-required"
-            placeholder="Add Agent Code Or Promo Code* eg.- FAA000xxx"
+            placeholder="Promo Code* eg.- FAA000xxx"
             value={agent_id}
             onChange={(e) => setAgentId(e.target.value)}
             error={!!errorMessageAgent}
@@ -440,12 +431,11 @@ const Form = () => {
       <h2 className="addmore">Billing Details</h2> 
       <div className="billConatainer">
         <div className="amountRow">
-          <p className="otherBilling">Subtotal :</p>  
+          <p className="otherBilling">Subtotal:</p>  
           {state==="Silver"?<p className="otherBilling"> ₹11999</p>:state === "Gold"?<p className="otherBilling"> ₹17999</p>:<p className="otherBilling"> ₹29999</p>}
         </div>
       </div>
       {couponApplied && <div>
-
       <div className="billConatainer">
         <div className="amountRow">
           <p className="otherDiscount">Discount 10% :</p>
@@ -478,7 +468,6 @@ const Form = () => {
       <Backdrop
         sx={{ color: "#fff", zIndex: (theme) => theme.zIndex.drawer + 1 }}
         open={open}
-        // onClick={handleClose}
       >
         <CircularProgress color="inherit" />
       </Backdrop>
